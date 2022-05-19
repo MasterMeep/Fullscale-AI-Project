@@ -43,4 +43,10 @@ Parameter:
  eopochs - training length, 15 works just fine for semi accurate data, for extremly accurate data though, if you have a lot of epochs you risk overtraining
  export - export file location of saved model, this can be used by importing it into a tensorflow neural network any time later
  
+ you can import a saved model with
+ 
+ ```py
+ model = tf.keras.models.load_model('./trainedModel')
+ ```
+ 
 
