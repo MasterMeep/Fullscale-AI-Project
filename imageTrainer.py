@@ -101,3 +101,25 @@ class imageTrainer:
         score = tf.nn.softmax(predictions[0])
 
         return(self.classes[np.argmax(score)])
+
+
+
+
+#classifications
+
+
+def classify(model, path, class_names, img_width=180, img_height=180):
+    img = Image.open(path)
+    img = img.convert('RGB')
+    img.save('image.jpg', 'jpeg')
+
+    img = tf.keras.utils.load_img(
+        './image.jpg', target_size=(img_height, img_width)
+    )
+    img_array  = tf.keras.preprocessing.image.img_to_array(img)
+    img_array = tf.expand_dims(img_array, 0) # Create a batch
+
+    predictions = model.predict(img_array)
+    score = tf.nn.softmax(predictions[0])
+
+    return(class_names[np.argmax(score)])
