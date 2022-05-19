@@ -1,6 +1,6 @@
 # Fullscale-AI-Project
 
-##Image Trainer
+## Image Trainer
 ```py
 from imageTrainer import imageTrainer
 
@@ -11,7 +11,7 @@ imagetrainer.train()
 
 this will create and save a tf model that classifies an image
 
-######File Structure:
+###### File Structure:
 
 ```
 ├── images                  # images folder named anything
@@ -22,7 +22,7 @@ this will create and save a tf model that classifies an image
 
 you can have as many classes as you want
 
-######Classification of input data:
+###### Classification of input data:
 
 ```py
 classification = imagetrainer.classify('image.png)
@@ -30,7 +30,7 @@ classification = imagetrainer.classify('image.png)
 
 using an image trainer which you have defined, this will return the classification of a given image, if the image is not in the dataset you WILL get wrong, or strange outputs
 
-######Parameters:
+###### Parameters:
 ```py
  data_dir, validation_split = 0.2, batch_size = 32, image_sizes = 180, optimizer = 'adam', epochs = 15, export = './trainedModel'
  ```
