@@ -13,14 +13,15 @@ this will create and save a tf model that classifies an image
 
 File Structure:
 
-.
-├── ...
+
 ├── images                  # images folder named anything
+
 │   ├── train               # train folder, named anything, make sure this is the folder you pass into imageTrainer
+
 │       ├── class #1        # named the first image type, containing all of that type, Ex. Waving, or Clapping
 │       ├── class #2        # named second class, whatever that may be
-│       ...               
-└── ...
+
+you can have as many classes as you want
 
 Classification of data:
 
