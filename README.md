@@ -1,6 +1,6 @@
 # Fullscale-AI-Project
 
-#Image Trainer
+Image Trainer
 ```py
 from imageTrainer import imageTrainer
 
